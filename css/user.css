@@ -28,8 +28,13 @@ summary:focus-visible {
   margin: 0 0 8px;
 }
 .author-avatar img {
+  box-sizing: border-box;
+  width: 110px;
+  height: 110px;
+  aspect-ratio: 1/1;
   object-fit: cover;
-  height: auto;
+  object-position: center 20%;
+  border-radius: 50%;
 }
 .profile-links {
   list-style: none;
@@ -96,6 +101,10 @@ summary:focus-visible {
   }
   .author-avatar {
     width: 64px;
+  }
+  .author-avatar img {
+    width: 64px;
+    height: 64px;
   }
   .author-discrip {
     line-height: 1.5;
