@@ -8,7 +8,7 @@ body {
 a:focus-visible,
 button:focus-visible,
 summary:focus-visible {
-  outline: 3px solid #1353d7;
+  outline: 3px solid #494e52;
   outline-offset: 4px;
 }
 .skip-link {
@@ -44,7 +44,7 @@ summary:focus-visible {
 .profile-links a {
   display: inline-block;
   padding: 4px 0;
-  color: #1353d7;
+  color: #494e52;
 }
 .author-links {
   cursor: auto;
@@ -65,7 +65,7 @@ summary:focus-visible {
   margin-bottom: 1rem;
 }
 .page article a {
-  color: #175a9c;
+  color: #494e52;
 }
 .page article h1,
 .page article h2 {
@@ -73,7 +73,7 @@ summary:focus-visible {
 }
 .news-archive summary {
   cursor: pointer;
-  color: #175a9c;
+  color: #494e52;
   padding: 8px 0;
 }
 .back-to-top {
@@ -84,7 +84,7 @@ summary:focus-visible {
   background: #fff;
   border: 1px solid #ddd;
   border-radius: 6px;
-  color: #175a9c;
+  color: #494e52;
   text-decoration: none;
 }
 @media (max-width: 34em) {
@@ -136,4 +136,12 @@ summary:focus-visible {
     animation: none !important;
     transition: none !important;
   }
+}
+a,
+a:visited {
+  color: #494e52;
+}
+a:hover {
+  color: #202428;
+  text-decoration: underline;
 }
