@@ -983,3 +983,133 @@ blockquote p {
 ::-webkit-scrollbar-thumb {
   background-color: rgba(122,130,136,0.4);
 }
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: Georgia, 'Times New Roman', serif;
+  line-height: 1.65;
+}
+a:focus-visible,
+button:focus-visible,
+summary:focus-visible {
+  outline: 3px solid #1353d7;
+  outline-offset: 4px;
+}
+.skip-link {
+  position: absolute;
+  left: 16px;
+  top: -100px;
+  z-index: 100;
+  padding: 8px 16px;
+  background: #fff;
+}
+.skip-link:focus {
+  top: 8px;
+}
+.author-name {
+  font-size: 2rem;
+  line-height: 1.3;
+  margin: 0 0 8px;
+}
+.author-avatar img {
+  object-fit: cover;
+  height: auto;
+}
+.profile-links {
+  list-style: none;
+  padding: 0;
+  margin: 14px 0;
+}
+.profile-links a {
+  display: inline-block;
+  padding: 4px 0;
+  color: #1353d7;
+}
+.author-links {
+  cursor: auto;
+}
+.side-card {
+  opacity: 1;
+}
+.page article {
+  padding-bottom: 1.2rem;
+}
+.page article h1 {
+  font-size: 2.6rem;
+}
+.page article h2 {
+  font-size: 2.1rem;
+}
+.page article li {
+  margin-bottom: 1rem;
+}
+.page article a {
+  color: #175a9c;
+}
+.page article h1,
+.page article h2 {
+  scroll-margin-top: 20px;
+}
+.news-archive summary {
+  cursor: pointer;
+  color: #175a9c;
+  padding: 8px 0;
+}
+.back-to-top {
+  position: fixed;
+  right: 16px;
+  bottom: 20px;
+  padding: 6px 14px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  color: #175a9c;
+  text-decoration: none;
+}
+@media (max-width: 34em) {
+  .author-links {
+    display: block;
+  }
+  .profile-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px 18px;
+  }
+  .profile-links li {
+    margin: 0;
+  }
+  .author-avatar {
+    width: 64px;
+  }
+  .author-discrip {
+    line-height: 1.5;
+  }
+  .page article {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .header_wrap {
+    padding-left: 0;
+  }
+  #site-name {
+    font-size: 1.7rem;
+  }
+  .menus_items {
+    max-width: calc(100vw - 40px);
+  }
+  .menus-open .menus_items {
+    z-index: 30;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}
